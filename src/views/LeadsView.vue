@@ -6,8 +6,8 @@
 </template>
  
 <script>
- import SideBar from '@/components/SideBar.vue'
- import MainPanel from '@/components/MainPanel.vue'
+ import SideBar from '@/components/Leads/SideBar.vue'
+ import MainPanel from '@/components/Leads/MainPanel.vue'
  
  export default {
    name: 'LeadView',

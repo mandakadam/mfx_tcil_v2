@@ -7,7 +7,7 @@
         <RouterLink  class="nav-link"  to="/leads/1">Leads</RouterLink >
         </li>
         <li class="nav-item" role="presentation">
-        <RouterLink class="nav-link"  to="/transactions" >Transactions</RouterLink>
+        <RouterLink class="nav-link"  to="/transactions/TransactionsHistory" >Transactions</RouterLink>
         </li>
         <li class="nav-item" role="presentation">
         <a class="nav-link" id="contact-tab"  href="#demographics" >Orders</a>

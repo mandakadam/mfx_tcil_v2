@@ -6,7 +6,7 @@
 
 <script>
 import PageHeader from './components/PageHeader.vue'
-import MainTabs from './components/MainTabs.vue'
+import MainTabs from './components/Leads/MainTabs.vue'
 import userList from "./db.json";
 
 export default {
