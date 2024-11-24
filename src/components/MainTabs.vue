@@ -12,7 +12,7 @@
         </li>
     </ul>
     <div>
-    <div class="btn-wrapper">
+    <div class="btn-wrapper pe-2">
         <a href="#" class="btn btn-otline-dark me-2"><i class="icon-printer"></i> Print</a>
         <a href="#" class="btn btn-primary text-white me-2"><i class="icon-download"></i> Export</a>
     </div>
