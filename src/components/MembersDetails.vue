@@ -1,5 +1,6 @@
 <template>
     <div>
+      
     <div class="row flex-grow">
                             <div class="col-12 grid-margin stretch-card">
                               <div class="card card-rounded">
@@ -21,17 +22,15 @@
                       <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                         <ul class="nav nav-tabs" role="tablist">
                           <li class="nav-item" role="presentation" v-for="(item, index) in membersList" :key="index">
-                            <a class="nav-link" :class="`${index == 0 ? 'active' : ''}`" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab">{{item.firstName}} {{item.LastName}}</a>
+                            <button class="nav-link" :class="`${item.firstName == selectedMember.firstName ? 'active' : ''}`" @click="selectedMember=item">{{item.firstName}} {{item.LastName}}</button>
                           </li>
-
-                         
                         </ul>
                       </div>
                       <div class="tab-content tab-content-basic pb-2">
                         <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
                             <div class="list-wrapper">
                                         <div class="row">
-                                          <div v-for="(item, index) in items" :key="index" class="col-12 col-md-6 col-lg-3 mb-3">
+                                          <div v-for="(item, index) in selectedMember.leads" :key="index" class="col-12 col-md-6 col-lg-3 mb-3">
                                             <div class="card shadow h-100">
                                             <div class="card-header d-flex bg-transparent border-0 pb-0">
                                             <div>
@@ -262,53 +261,11 @@
 import MemberForm from "./MemberForm.vue"
 export default {
   components: {MemberForm},
+  props: ['membersList'],
     data(){
         return{
-          uniqueModal:null,
-            membersList:[
-              {
-                  "firstName": "Sachin",
-                  "LastName": "Tendulkar",
-                  "EmailAddress": "",
-                  "address1": "",
-                  "address2": "",
-                  "state": "Maharashtra",
-                  "country": "India",
-                  "postcode": "",
-                  "gender": "Male",
-                  "dob": "",
-                  "product": "Card",
-                  "city": "Mumbai"
-              },
-              {
-                  "firstName": "Arjun",
-                  "LastName": "Tendulkar",
-                  "EmailAddress": "",
-                  "address1": "",
-                  "address2": "",
-                  "state": "Maharashtra",
-                  "country": "India",
-                  "postcode": "",
-                  "gender": "Male",
-                  "dob": "",
-                  "product": "Card",
-                  "city": "Mumbai"
-              },
-              {
-                  "firstName": "Sara",
-                  "LastName": "Tendulkar",
-                  "EmailAddress": "",
-                  "address1": "",
-                  "address2": "",
-                  "state": "Maharashtra",
-                  "country": "India",
-                  "postcode": "",
-                  "gender": "Male",
-                  "dob": "",
-                  "product": "Card",
-                  "city": "Mumbai"
-              }
-            ],
+          selectedMember:this.membersList[0],
+            // membersList: this.membersList,
 
             items:[
                 {
@@ -380,9 +337,16 @@ export default {
     },
     methods:{
       onAddMembers(data){
-        this.membersList.push(data)
+        console.log(data);
+        // this.membersList.push(data)
 
       }
+    },
+    watch: {
+    // whenever question changes, this function will run
+    membersList(newval) {
+      this.selectedMember = newval[0]
     }
+  },
 }
 </script>

@@ -3,7 +3,7 @@
     <div class="content-wrapper py-2">
         <SummaryDetails />
         <LeadsForm />
-        <MembersDetails />
+        <MembersDetails :membersList="dataSource.membersList"/>
         <QuotesForm />
         <div class="row">
           <div class="col-lg-8">
@@ -26,9 +26,9 @@ import MembersDetails from './MembersDetails.vue'
 import QuotesForm from './QuotesForm.vue'
 import QuotesDetails from './QuotesDetails.vue'
 import QuotesHistory from './QuotesHistory.vue'
-
 export default {
   name: 'App',
+  props: ['dataSource'],
   components: {
     SummaryDetails,
     LeadsForm,
@@ -36,7 +36,6 @@ export default {
     QuotesForm,
     QuotesDetails,
     QuotesHistory
-
   }
 }
 </script>

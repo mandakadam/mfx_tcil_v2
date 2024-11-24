@@ -315,9 +315,9 @@
               color: $sidebar-dark-menu-hover-color;
               &:before {
                 content: "";
-                width: 2px;
+                width: 5px;
                 height: 100%;
-                background: $white;
+                // background: $primary;
                 left: 0;
                 top: 0;
                 position: absolute;

@@ -1,8 +1,8 @@
 <template>
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <ul class="nav">
-    <li class="nav-item shadow my-0" :class="`${index == 0 ?'bg-gradient-warning active':'bg-gradient-primary'}`" v-for="(item, index) in userList" :key="index" >
-      <a class="nav-link" :class="`${index == 0 ?'text-white':'text-light'}`" href="index.html">
+    <li class="nav-item shadow my-0" :class="`${$route.params.id == item.id ?'bg-gradient-warning active':'bg-gradient-primary'}`" v-for="(item, index) in userList" :key="index" >
+      <RouterLink class="nav-link" :class="`${$route.params.id == item.id ?'text-white':'text-light'}`" :to="`/leads/${item.id}`">
         <div class="d-flex flex-column">
           <span>
           <!-- <i class="mdi mdi-account-circle-outline menu-icon"></i> -->
@@ -14,7 +14,7 @@
       </span>
       
         </div>
-      </a>
+      </RouterLink>
     </li>
 
     <li class="nav-item nav-category">Quick Links</li>
@@ -30,9 +30,10 @@
 </template>
 <script>
 export default {
+  props:['userList'],
   data(){
     return{
-      userList:[
+      userListTemp:[
         {
           title: "Sachin Tendulkar",
           product:"Card",
@@ -69,6 +70,7 @@ export default {
           variant:"success"
         }
       ],
+
       quickLinks:[
         {
           title: "Forex Card",

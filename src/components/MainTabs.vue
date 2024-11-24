@@ -1,14 +1,16 @@
 <template>
     <div class="home-tab d-sm-flex align-items-center justify-content-between border-bottom">
+
+
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation">
-        <a class="nav-link active h5" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Leads</a>
+        <RouterLink  class="nav-link"  to="/leads/1">Leads</RouterLink >
         </li>
         <li class="nav-item" role="presentation">
-        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences" role="tab" aria-selected="false" tabindex="-1">Transactions</a>
+        <RouterLink class="nav-link"  to="/transactions" >Transactions</RouterLink>
         </li>
         <li class="nav-item" role="presentation">
-        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#demographics" role="tab" aria-selected="false" tabindex="-1">Orders</a>
+        <a class="nav-link" id="contact-tab"  href="#demographics" >Orders</a>
         </li>
     </ul>
     <div>
@@ -22,5 +24,6 @@
 <style lang="scss" scoped>
 .home-tab{
     .nav-link{font-size: 0.9rem !important;}
+    .router-link-exact-active{color: #1f3bb3 !important;}
 }
 </style>

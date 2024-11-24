@@ -1,25 +1,34 @@
 <template>
    <PageHeader msg="Welcome to Your Vue.js App"/>
-     <MainTabs />
-  <div class="container-fluid page-body-wrapper pt-0 sidebar-dark">
-     <SideBar />
-     <MainPanel />
-  </div>
-</template>
+     <MainTabs  />
+     <RouterView  :dataSource="dataSource" :userList="userList" />
+</template>s
 
 <script>
 import PageHeader from './components/PageHeader.vue'
-import SideBar from './components/SideBar.vue'
 import MainTabs from './components/MainTabs.vue'
-import MainPanel from './components/MainPanel.vue'
+import userList from "./db.json";
 
 export default {
   name: 'App',
   components: {
     PageHeader,
-    SideBar,
     MainTabs,
-    MainPanel
-  }
+  },
+  data(){
+    return{
+      dataSource: {},
+      userList: userList
+    }
+  },
+  created() {
+    this.$watch(
+      () => this.$route.params.id,
+      (newId) => {
+        console.log(newId);
+        this.dataSource = userList.filter(item=>item.id == newId)[0];
+      }
+    )
+  },
 }
 </script>

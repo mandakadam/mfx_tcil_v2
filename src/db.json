@@ -1,0 +1,398 @@
+[
+    {
+        "id":1,
+        "title": "Sachin Tendulkar",
+        "product":"Card",
+        "currency":"USD",
+        "fc_amount":"2",
+        "variant":"primary",
+        "membersList":[
+        {
+            "firstName": "Sachin",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai",
+            "leads": [
+                {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "TT",
+                "fc_amount": "3",
+                "rate":"84.45",
+                "domain":"ASTRA"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "10",
+                "rate":"84.45",
+                "domain":"CRM"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "20",
+                "rate":"84.45",
+                "domain":"MUDRA"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "2",
+                "rate":"84.45",
+                "domain":"ASTRA"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "3",
+                "rate":"84.45",
+                "domain":"CRM"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "TT",
+                "fc_amount": "4",
+                "rate":"84.45",
+                "domain":"ASTRA"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "4",
+                "rate":"84.45",
+                "domain":"CRM"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "3",
+                "rate":"84.45",
+                "domain":"MUDRA"
+            }
+            ]
+        },
+        {
+            "firstName": "Arjun",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai",
+            "leads": [
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "4",
+                "rate":"84.45",
+                "domain":"CRM"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "3",
+                "rate":"84.45",
+                "domain":"MUDRA"
+            }
+            ]
+        },
+        {
+            "firstName": "Sara",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai",
+            "leads": [
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "3",
+                "rate":"84.45",
+                "domain":"CRM"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "TT",
+                "fc_amount": "4",
+                "rate":"84.45",
+                "domain":"ASTRA"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "4",
+                "rate":"84.45",
+                "domain":"CRM"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "3",
+                "rate":"84.45",
+                "domain":"MUDRA"
+            }
+            ]
+        }
+        ]
+    },
+    {
+        "id":2,
+        "title": "Sunil Gavaskar",
+        "product":"Card",
+        "currency":"USD",
+        "fc_amount":"2",
+        "variant":"primary",
+        "membersList":[
+        {
+            "firstName": "Sunil",
+            "LastName": "Gavaskar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai",
+            "leads": [
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "4",
+                "rate":"84.45",
+                "domain":"CRM"
+            },
+            {
+                "date": "10-05-2024 22:15:00",
+                "currency": "USD",
+                "product": "Card",
+                "fc_amount": "3",
+                "rate":"84.45",
+                "domain":"MUDRA"
+            }
+            ]
+        },
+        {
+            "firstName": "Marshneil",
+            "LastName": "Gavaskar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        },
+        {
+            "firstName": "Rohan",
+            "LastName": "Gavaskar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        }
+        ]
+    },
+    {
+        "id":3,
+        "title": "Rohit Sharma",
+        "product":"Card",
+        "currency":"USD",
+        "fc_amount":"2",
+        "variant":"primary",
+        "membersList":[
+        {
+            "firstName": "Sachin",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        },
+        {
+            "firstName": "Arjun",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        },
+        {
+            "firstName": "Sara",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        }
+        ]
+    },
+    {
+        "id":4,
+        "title": "Suryakumar Yadav",
+        "product":"Card",
+        "currency":"USD",
+        "fc_amount":"2",
+        "variant":"primary",
+        "membersList":[
+        {
+            "firstName": "Sachin",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        },
+        {
+            "firstName": "Arjun",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        },
+        {
+            "firstName": "Sara",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        }
+        ]
+    },
+    {
+        "id":5,
+        "title": "Ajinkya Rahane",
+        "product":"Card",
+        "currency":"USD",
+        "fc_amount":"2",
+        "variant":"primary",
+        "membersList":[
+        {
+            "firstName": "Sachin",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        },
+        {
+            "firstName": "Arjun",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        },
+        {
+            "firstName": "Sara",
+            "LastName": "Tendulkar",
+            "EmailAddress": "",
+            "address1": "",
+            "address2": "",
+            "state": "Maharashtra",
+            "country": "India",
+            "postcode": "",
+            "gender": "Male",
+            "dob": "",
+            "product": "Card",
+            "city": "Mumbai"
+        }
+        ]
+    }
+]
