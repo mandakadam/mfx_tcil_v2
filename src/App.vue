@@ -1,5 +1,5 @@
 <template>
-  <PageHeader msg="Welcome to Your Vue.js App"/>
+   <PageHeader msg="Welcome to Your Vue.js App"/>
      <MainTabs />
   <div class="container-fluid page-body-wrapper pt-0 sidebar-dark">
      <SideBar />

@@ -1,8 +1,8 @@
 <template>
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
   <ul class="nav">
-    <li class="nav-item shadow" :class="{'active': index==0}" v-for="(item, index) in userList" :key="index" >
-      <a class="nav-link  text-light"  :class="{'text-white': index==0}" href="index.html">
+    <li class="nav-item shadow my-0" :class="`${index == 0 ?'bg-gradient-warning active':'bg-gradient-primary'}`" v-for="(item, index) in userList" :key="index" >
+      <a class="nav-link" :class="`${index == 0 ?'text-white':'text-light'}`" href="index.html">
         <div class="d-flex flex-column">
           <span>
           <!-- <i class="mdi mdi-account-circle-outline menu-icon"></i> -->
@@ -35,33 +35,38 @@ export default {
       userList:[
         {
           title: "Sachin Tendulkar",
-          product:"card",
+          product:"Card",
           currency:"USD",
-          fc_amount:"2"
+          fc_amount:"2",
+          variant:"primary"
         },
         {
           title: "Sunil Gavaskar",
           product:"Remittances",
           currency:"UK",
-          fc_amount:"10"
+          fc_amount:"10",
+          variant:"info"
         },
         {
           title: "Rohit Sharma",
           product:"TT",
           currency:"USD",
-          fc_amount:"12"
+          fc_amount:"12",
+          variant:"warning"
         },
         {
           title: "Suryakumar Yadav",
           product:"TT",
           currency:"USD",
-          fc_amount:"12"
+          fc_amount:"12",
+          variant:"secondary"
         },
         {
           title: "Ajinkya Rahane",
           product:"TT",
           currency:"USD",
-          fc_amount:"12"
+          fc_amount:"12",
+          variant:"success"
         }
       ],
       quickLinks:[
@@ -112,7 +117,7 @@ export default {
         },
         {
           title: "MISC Transactions",
-          icon:"",
+          icon:"mdi-credit-card-outline",
           link:""
         },
         {

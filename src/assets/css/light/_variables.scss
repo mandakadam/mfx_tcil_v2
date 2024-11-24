@@ -113,11 +113,11 @@ $dribbble: #ea4c89;
 $reddit: #ff4500;
 
 $theme-gradient-colors: (
-  primary: linear-gradient(230deg, #759bff, #843cf6),
+  primary: linear-gradient(225deg, #3F51B5, #0e1433),
   secondary: linear-gradient(to right, #e7ebf0, #868e96),
   success: linear-gradient(45deg, #7bffce, #30c93e),
-  info: linear-gradient(to bottom, #0e4cfd, #6a8eff),
-  warning: linear-gradient(135deg, #ffc480, #ff763b),
+  info: linear-gradient(230deg, #2196F3, #3F51B5),
+  warning: linear-gradient(135deg, #f7cc56, #d8ba12),
   danger: linear-gradient(316deg, #fc5286, #fbaaa2),
   light: linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%),
   dark: linear-gradient(to right, #7d7979 0%, #000000 100%),
@@ -221,7 +221,7 @@ $input-placeholder-color: #c9c8c8;
 $input-font-size: 0.875rem;
 
 $input-padding-y: 0.875rem;
-$input-padding-x: 1.375rem;
+$input-padding-x: 1rem;
 $input-line-height: 1;
 
 $input-padding-y-xs: 0.5rem;
@@ -233,7 +233,7 @@ $input-padding-x-sm: 0.81rem;
 $input-padding-y-lg: 0.94rem;
 $input-padding-x-lg: 1.94rem;
 
-$input-height: 2.75rem;
+$input-height: 1.9rem;
 $input-height-sm: 1.75rem;
 $input-height-lg: 3.175rem;
 

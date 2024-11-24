@@ -20,22 +20,18 @@
                                       <div class="home-tab">
                       <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                         <ul class="nav nav-tabs" role="tablist">
-                          <li class="nav-item" role="presentation">
-                            <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Sachin Tendulkar</a>
+                          <li class="nav-item" role="presentation" v-for="(item, index) in membersList" :key="index">
+                            <a class="nav-link" :class="`${index == 0 ? 'active' : ''}`" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab">{{item.firstName}} {{item.LastName}}</a>
                           </li>
-                          <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences" role="tab" aria-selected="false" tabindex="-1">Arjun Tendulkar</a>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#demographics" role="tab" aria-selected="false" tabindex="-1">Sara tendulkar</a>
-                          </li>
+
+                         
                         </ul>
                       </div>
                       <div class="tab-content tab-content-basic pb-2">
                         <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="home-tab">
                             <div class="list-wrapper">
                                         <div class="row">
-                                          <div v-for="(item, index) in items" :key="index" class="col-3 mb-3">
+                                          <div v-for="(item, index) in items" :key="index" class="col-12 col-md-6 col-lg-3 mb-3">
                                             <div class="card shadow h-100">
                                             <div class="card-header d-flex bg-transparent border-0 pb-0">
                                             <div>
@@ -102,7 +98,7 @@
                                 <h4 class="card-title  card-title-dash mb-0">Purpose (Optional)</h4>
                                 </div>
 
-                                <div class="card-body card-rounded" style="display:grid; grid-template-columns:1fr 1fr">
+                                <div class="card-body card-rounded py-2" style="display:grid; grid-template-columns:1fr 1fr">
                                   <div class="list align-items-center border-bottom py-2">
                                     <div class="wrapper w-100">
                                       <p class="mb-2 fw-medium">
@@ -167,13 +163,60 @@
                               </div>
                             </div>
                             <div class="col-md-6 col-lg-6 grid-margin stretch-card">
+                            
+                              
                               <div class="card card-rounded">
                                 <div class="card-body py-2">
                                   <div class="d-flex align-items-center justify-content-between mb-3">
-                                    <h4 class="card-title card-title-dash">Limit Details (Total 20 Limits)</h4>
+                                    <h4 class="card-title card-title-dash">Limit Details</h4>
                                     <p class="mb-0">5 Limits Utilised</p>
                                   </div>
-                                  <ul class="bullet-line-list">
+
+                                  <div class="row">
+                                <div class="col-6 mb-4">
+                                  <h4 class="fs-14 fw-bold">Cash Limit Balance</h4>
+                                  <div class="d-flex justify-content-between">
+                                    <p class="text-muted">UDD 2.3K</p>
+                                  </div>
+                                  <div class="progress progress-md">
+                                    <div class="progress-bar bg-info w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+
+                              <div class="col-6 mb-4">
+                                  <h4 class="fs-14 fw-bold">LRS Limit Balance</h4>
+                                  <div class="d-flex justify-content-between">
+                                    <p class="text-muted">USD 150K</p>
+                                  </div>
+                                  <div class="progress progress-md">
+                                    <div class="progress-bar bg-info w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+
+                              <div class="col-6 mb-4">
+                                  <h4 class="fs-14 fw-bold">TCS Applicable <i class="mdi mdi-check-circle-outline h5 text-warning"></i></h4>
+                                  <div class="d-flex justify-content-between">
+                                    <p class="text-muted">INR 123K</p>
+                                  </div>
+                                  <div class="progress progress-md">
+                                    <div class="progress-bar bg-warning w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+
+
+                              <div class="col-6 mb-4">
+                                  <h4 class="fs-14 fw-bold">Previous Screening <i class="mdi mdi-check-decagram-outline h5 text-success"></i></h4>
+                                  <div class="d-flex justify-content-between">
+                                    <p class="badge badge-success">Authorized</p>
+                                  </div>
+                                  <!-- <div class="progress progress-md">
+                                    <div class="progress-bar bg-danger  w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div> -->
+                              </div>
+
+                            </div>
+
+                                  <!-- <ul class="bullet-line-list">
                                     <li>
                                       <div class="d-flex justify-content-between">
                                         <div><span class="text-light-green">Cash Limit</span></div>
@@ -199,14 +242,7 @@
                                       </div>
                                     </li>
                                   
-                                  </ul>
-                                  <div class="list align-items-center pt-3">
-                                    <div class="wrapper w-100">
-                                      <p class="mb-0">
-                                        <a href="#" class="fw-bold text-primary">Show all <i class="mdi mdi-arrow-right ms-2"></i></a>
-                                      </p>
-                                    </div>
-                                  </div>
+                                  </ul> -->
                                 </div>
                               </div>
                             </div>
@@ -214,30 +250,66 @@
 
 
                           <!-- Modal -->
-<div class="modal fade" id="AddForm" tabindex="-1" aria-labelledby="AddFormLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="AddFormLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+<div class="modal modal-lg fade" id="AddForm" tabindex="-1" aria-labelledby="AddFormLabel" aria-hidden="true">
+<MemberForm @onAddMembers="onAddMembers" />
 </div>
     </div>
 </template>
 
 <script>
+
+
+import MemberForm from "./MemberForm.vue"
 export default {
+  components: {MemberForm},
     data(){
         return{
+          uniqueModal:null,
+            membersList:[
+              {
+                  "firstName": "Sachin",
+                  "LastName": "Tendulkar",
+                  "EmailAddress": "",
+                  "address1": "",
+                  "address2": "",
+                  "state": "Maharashtra",
+                  "country": "India",
+                  "postcode": "",
+                  "gender": "Male",
+                  "dob": "",
+                  "product": "Card",
+                  "city": "Mumbai"
+              },
+              {
+                  "firstName": "Arjun",
+                  "LastName": "Tendulkar",
+                  "EmailAddress": "",
+                  "address1": "",
+                  "address2": "",
+                  "state": "Maharashtra",
+                  "country": "India",
+                  "postcode": "",
+                  "gender": "Male",
+                  "dob": "",
+                  "product": "Card",
+                  "city": "Mumbai"
+              },
+              {
+                  "firstName": "Sara",
+                  "LastName": "Tendulkar",
+                  "EmailAddress": "",
+                  "address1": "",
+                  "address2": "",
+                  "state": "Maharashtra",
+                  "country": "India",
+                  "postcode": "",
+                  "gender": "Male",
+                  "dob": "",
+                  "product": "Card",
+                  "city": "Mumbai"
+              }
+            ],
+
             items:[
                 {
                 date: "10-05-2024 22:15:00",
@@ -305,6 +377,12 @@ export default {
             }
         ]
         }
+    },
+    methods:{
+      onAddMembers(data){
+        this.membersList.push(data)
+
+      }
     }
 }
 </script>

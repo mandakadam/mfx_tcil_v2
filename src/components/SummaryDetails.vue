@@ -1,8 +1,5 @@
 <template>
-   <div class="row">
-        <div class="col-sm-12">
             <div class="statistics-details d-flex align-items-center justify-content-between">
-
                 <div v-for="(item, index) in SummaryCard" :key="index" class="card card-rounded shadow-lg h-100 text-gray pe-4" :class="`bg-${item.variant}`">
                 <div class="card-body py-2 d-flex flex-column">
                     <h6 class="card-title card-title-dash text-white fs-12 mb-0" >{{item.title}}</h6>
@@ -11,8 +8,6 @@
                 </div>
                 </div>
             </div>
-        </div>
-        </div>
 </template>
 <script>
 export default {

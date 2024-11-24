@@ -2,39 +2,38 @@
     <div class="card my-3">
     <div class="card-body py-1">
         <form class="row row-cols-lg-auto align-items-center">
-  <div class="col-12">
+  <div>
     <label class="visually-hidden" for="inlineFormInputGroupUsername">Mobile</label>
     <div class="input-group">
       <div class="input-group-text">+91</div>
-      <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername" placeholder="9820342840 ">
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="9876543210">
+      <button type="submit" class="btn btn-primary btn-sm rounded-1 py-1"> <i class="mdi mdi-check" /> Verify</button>
     </div>
   </div>
 
-  
-
-  <div class="col-12">
+  <!-- <div>
     <div class="form-check">
       <input class="form-check-input" type="checkbox" id="inlineFormCheck">
       <label class="form-check-label ms-0" for="inlineFormCheck">
         Remember me
       </label>
     </div>
-  </div>
-  <div class="col-12">
+  </div> -->
+  <div>
     <label class="visually-hidden" for="inlineFormSelectPref">Doc Type</label>
     <select class="form-select" id="inlineFormSelectPref">
       <option selected>Passport</option>
       <option value="1">PanCard</option>
     </select>
   </div>
-  <div class="col-12">
+  <div>
     <label class="visually-hidden" for="inlineFormInputGroupUsername">Doc ID</label>
     <div class="input-group">
-      <input type="text" class="form-control form-control-sm" id="inlineFormInputGroupUsername" placeholder="Doc ID ">
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Doc ID ">
     </div>
   </div>
 
-  <div class="col-12">
+  <div>
     <label class="visually-hidden" for="inlineFormSelectPref">Country</label>
     <select class="form-select" id="inlineFormSelectPref">
       <option selected>India</option>
@@ -53,5 +52,5 @@
 </template>
 
 <style scoped>
-.form-control,.form-select{font-size: 12px; border-radius: 5px; padding-top: 5px; padding-bottom: 5px; border-style: dashed;}
+.form-control,.form-select{font-size: 12px; border-radius: 5px; padding-top: 5px; padding-bottom: 5px; border-style: dashed;  outline-style: dashed;}
 </style>

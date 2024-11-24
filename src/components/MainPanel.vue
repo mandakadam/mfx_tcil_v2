@@ -4,11 +4,12 @@
         <SummaryDetails />
         <LeadsForm />
         <MembersDetails />
+        <QuotesForm />
         <div class="row">
-          <div class="col-8">
+          <div class="col-lg-8">
             <QuotesDetails />
           </div>
-          <div class="col-4">
+          <div class="col-lg-4">
             <QuotesHistory />
           </div>
         </div>
@@ -22,6 +23,7 @@
 import SummaryDetails from './SummaryDetails.vue'
 import LeadsForm from './LeadsForm.vue'
 import MembersDetails from './MembersDetails.vue'
+import QuotesForm from './QuotesForm.vue'
 import QuotesDetails from './QuotesDetails.vue'
 import QuotesHistory from './QuotesHistory.vue'
 
@@ -31,6 +33,7 @@ export default {
     SummaryDetails,
     LeadsForm,
     MembersDetails,
+    QuotesForm,
     QuotesDetails,
     QuotesHistory
 

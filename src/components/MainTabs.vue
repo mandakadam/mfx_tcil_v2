@@ -2,7 +2,7 @@
     <div class="home-tab d-sm-flex align-items-center justify-content-between border-bottom">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Pre-Deals</a>
+        <a class="nav-link active h5" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Leads</a>
         </li>
         <li class="nav-item" role="presentation">
         <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences" role="tab" aria-selected="false" tabindex="-1">Transactions</a>
@@ -19,3 +19,8 @@
     </div>
     </div>
 </template>
+<style lang="scss" scoped>
+.home-tab{
+    .nav-link{font-size: 0.9rem !important;}
+}
+</style>

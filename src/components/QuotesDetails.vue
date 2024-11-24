@@ -1,8 +1,9 @@
 <template>
     <div>
+      
         <div class="card">
                   <div class="card-body py-2">
-                    <h4 class="card-title">Quotes</h4>
+                    <h4 class="card-title mb-2">Quotes</h4>
                     <div class="table-responsive">
                       <table class="table table-hover table-sm">
                         <thead>
