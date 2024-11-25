@@ -25,7 +25,11 @@
                             <td>0</td>
                             <td>0</td>
                             <td>10k</td>
-                            <td><label class="badge badge-danger">Pending</label></td>
+                            <td width="100px" v-if="index==0"><label class="badge badge-info d-block">Quote Sent</label></td>
+                            <td width="100px" v-else-if="index==1"><label class="badge badge-info d-block">Payment Received</label></td>
+                            <td width="100px" v-else-if="index==2"><label class="badge badge-success d-block">Transaction Initiated</label></td>
+                            <td width="100px" v-else><label class="badge badge-danger d-block">Expired</label></td>
+                            <!-- <td v-else><label class="badge badge-danger">Pending</label></td> -->
                           </tr>
                         </tbody>
                       </table>
